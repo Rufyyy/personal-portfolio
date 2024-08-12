@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+body {
+            background-image: url(BG3.jpg);
+            background-size: cover;
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars due to particle animation */
+        }
+
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+   .navigation{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .navigation a {
+            margin-bottom: 20px; /* Adjust spacing between icons */
+            text-decoration: none;
+            color: #fefbfb; /* Adjust color as needed */
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: blueviolet; /* Adjust hover color */
+        }
+
+      .projects{
+        position: absolute;
+    top: 20px;
+   left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+
+      .projects a {
+            margin-bottom: 20px; /* Adjust spacing between icons */
+            text-decoration: none;
+            color: #fdfafa; /* Adjust color as needed */
+            font-size: 30px;
+            transition: color 0.3s ease;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+
+        .projects a:hover{
+            color: blueviolet;
+        }
+
+        .certifications{
+        position: absolute;
+    bottom: 20px;
+   left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+
+      .certifications a {
+            margin-bottom: 20px; /* Adjust spacing between icons */
+            text-decoration: none;
+            color: #fefbfb; /* Adjust color as needed */
+            font-size: 30px;
+            transition: color 0.3s ease;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+
+        .certifications a:hover{
+            color: blueviolet;
+        }
+
+        .container {
+            border: 2px solid rgb(255, 255, 255); /* Border around the box */
+            padding: 10px; /* Space between border and content */
+            border-radius: 10px; /* Optional: rounded corners */
+            width: 50%;
+            max-width: 1000px; /* Limit the width of the container */
+            box-sizing: border-box; /* Include padding and border in the width */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto; /* Center the container */
+            position: relative; /* For positioning within the container */
+            top: 50px;
+        }
+
+    .image{
+        margin: 0px;
+        padding: 0px;
+        /*width: 100%;
+        height: 100vh;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        
+    }
+    .image img{
+        height: 250px;
+        width: 200px;
+        transition: transform .2s;
+    }
+    .image img:hover {
+    transform: scale(1.5); /* Scale the image on hover }*/
+    }
+
+    .about-text{
+        width: 30px;
+        padding:78px 0px;
+        text-align: center; /* Center the text */
+         position: relative;/* Allow the text to take up space */
+        z-index: 2;
+        color: #fff;
+    }
+
+
+#typing-text {
+    font-size: 2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for spacing between lines */
+}
+
+.line1 {
+    display: block; /* Ensure this line is on its own line */
+}
+
+.line2 {
+    display: block; /* Ensure this line is on its own line */
+    font-weight: bold; /* Make the second line stand out */
+}
+
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    button{
+        background: blueviolet;
+        color: rgb(249, 249, 249);
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        transition: .4s;
+        cursor: pointer;
+    }
+    button:hover{
+        background: transparent;
+        border: 2px solid  blueviolet;
+        cursor: pointer;
+    }
+
+    /* Media Queries for Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row; /* Row layout on larger screens */
+            }
+
+            .image {
+                margin: 0;
+                padding: 0;
+                flex: 1;
+            }
+
+            .about-text {
+                flex: 2;
+            }
+
+            .navigation a, .projects a, .certifications a {
+                font-size: 30px; /* Increase font size on larger screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navigation a, .projects a, .certifications a {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navigation a, .projects a, .certifications a {
+                font-size: 18px; /* Further adjust font size for very small screens */
+            }
+
+            .container {
+                flex-direction: column; /* Stack items vertically on very small screens */
+            }
+        }
+
+</style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="projects">
+        <a href="projects.html">Projects</a>
+    </div>
+    <div class="certifications">
+        <a href="certifications.html">Certifications</a>
+    </div>
+    <div class="navigation">
+        <a href="https://www.instagram.com/rufyyy.xx/"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:rufinaa0710@gmail.com"><i class="fas fa-envelope"></i></a> <!-- Example for email icon -->
+        <a href="https://www.linkedin.com/in/rufina10/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Rufyyy"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="container">
+    <div class="image">
+        <img src="download-removebg-preview.png" class="zoom-img" alt="Profile picture of the site owner" title="Profile picture of the site owner">
+    </div>
+    <div class="about-text">
+        <h1 id="typing-text"></h1>
+        <button type="button">Know Me</button>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typing-text', {
+                strings: [ "Hi, I'm a Junior Developer",
+                           "Hi, I'm a Fresher"],
+                typeSpeed: 80,
+                backSpeed: 50,
+                loop: true
+            });
+
+         // Initialize Particle.js
+         particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+    </script>
+</body>
+</html>
